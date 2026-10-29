@@ -1,0 +1,46 @@
+
+/* Reinicio de estilos */
+* {
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Página a pantalla completa */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../Postercss.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    cursor: none;
+}
+
+/* Círculo que invierte los colores */
+.circulo {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    background: white;
+
+    mix-blend-mode: difference;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    will-change: left, top;
+}
